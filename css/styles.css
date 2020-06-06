@@ -12,6 +12,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: #e5e5e5;
 }
 a {
   text-decoration: none;
@@ -19,16 +20,7 @@ a {
 ul {
   list-style: none;
 }
-.header {
-  background-image: url(../img/Header.jpg);
-  color: var(--effect-color);
-}
-.logo-header {
-  color: #000000;
-}
-.logo-footer {
-  color: var(--effect-color);
-}
+/* logo */
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -36,8 +28,17 @@ ul {
   line-height: 1.19;
   color: var(--accent-color);
 }
-/* Site-nav */
-/* contact-nav */
+.logo-header {
+  color: #000000;
+}
+.logo-footer {
+  color: var(--effect-color);
+}
+
+/* header + navigation */
+header {
+  background-color: var(--effect-color);
+}
 .site-nav .link {
   color: var(--primary-text-color);
 }
@@ -61,10 +62,6 @@ ul {
 .contact-nav .link:focus {
   color: var(--accent-color);
 }
-footer {
-  background: #2f303a;
-  color: var(--effect-color);
-}
 .header-title {
   font-family: Roboto;
   font-weight: 900;
@@ -74,6 +71,50 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--effect-color);
+}
+.header {
+  background-image: url(../img/Header.jpg);
+  color: var(--effect-color);
+}
+.button {
+  background: var(--accent-color);
+  color: var(--effect-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: absolute;
+  height: 50px;
+  width: 200px;
+}
+
+/* footer */
+footer {
+  background: #2f303a;
+  color: var(--effect-color);
+}
+.copyright {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts:hover,
+.contacts:focus {
+  background: var(--accent-color);
+  color: var(--effect-color);
+}
+address {
+  font-style: normal;
 }
 .section-title {
   font-weight: 700;
@@ -98,7 +139,6 @@ footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: var(--effect-color);
@@ -107,12 +147,13 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+}
+.team {
+  background: #f5f4fa;
 }
 .profession {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--title-text-color);
 }
 .social-link a:hover,
@@ -125,9 +166,8 @@ footer {
   background: var(--accent-color);
   color: var(--effect-color);
 }
-.team {
-  background: #f5f4fa;
-}
+/* portfolio */
+/* buttons */
 .btn {
   background: #f5f4fa;
   border-radius: 4px;
@@ -145,45 +185,23 @@ footer {
   background: var(--accent-color);
   color: var(--effect-color);
 }
-.projects {
+/* projects */
+.projects-title {
   visibility: hidden;
 }
-address {
-  font-style: normal;
-}
-.button {
-  background: var(--accent-color);
-  color: var(--effect-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  position: absolute;
-  height: 50px;
-  width: 200px;
-}
-.copyright {
-  font-size: 12px;
+.project-item {
+  font-size: 18px;
   line-height: 2;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
-.footer-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+.project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--title-text-color);
 }
-.contacts {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+.project-link:hover,
+.project-link:focus {
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
 }
-.contacts:hover,
-.contacts:focus {
-  background: var(--accent-color);
-  color: var(--effect-color);
-}
-/* фон хедер background: #FFFFFF;*/
-/* секция2 background: #E5E5E5; */
-/* секция3 background: #E5E5E5; */
-/* секция4 background: #F5F4FA; */
-/* секция5 background: #E5E5E5; */
