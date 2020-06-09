@@ -41,6 +41,7 @@ header {
 }
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -166,8 +167,7 @@ footer {
 }
 .contacts:hover,
 .contacts:focus {
-  background: var(--accent-color);
-  color: var(--effect-color);
+  color: var(--accent-color);
 }
 address {
   font-style: normal;
